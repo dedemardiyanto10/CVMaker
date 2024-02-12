@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+     xmlns:android="http://schemas.android.com/apk/res/android"
+     xmlns:app="http://schemas.android.com/apk/res-auto"
+     xmlns:tools="http://schemas.android.com/tools"
+     android:layout_height="wrap_content"
+     android:layout_width="match_parent"
+     android:padding="16dp"
+     android:orientation="vertical">
+
+  <com.google.android.material.textfield.TextInputLayout
+         android:layout_height="wrap_content"
+         android:layout_width="match_parent"
+         app:endIconMode="clear_text"
+         app:boxCornerRadiusTopEnd="8dp"
+         android:hint="Masukkan Nama File"
+         android:padding="5dp"
+         app:boxCornerRadiusBottomStart="8dp"
+         app:boxStrokeWidthFocused="1.5dp"
+         app:boxCornerRadiusBottomEnd="8dp"
+         app:boxCornerRadiusTopStart="8dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+             android:layout_height="wrap_content"
+             android:layout_width="match_parent"
+             android:singleLine="true"
+             android:inputType="text"
+             android:id="@+id/alertInput" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+</LinearLayout>

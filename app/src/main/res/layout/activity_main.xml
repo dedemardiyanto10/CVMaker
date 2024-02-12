@@ -1,0 +1,1063 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+     xmlns:android="http://schemas.android.com/apk/res/android"
+     xmlns:app="http://schemas.android.com/apk/res-auto"
+     xmlns:tools="http://schemas.android.com/tools"
+     android:layout_height="match_parent"
+     android:layout_width="match_parent"
+     android:orientation="vertical">
+
+    <androidx.appcompat.widget.Toolbar
+         android:layout_height="?attr/actionBarSize"
+         android:layout_width="match_parent"
+         android:background="?@attr/colorPrimary"
+         app:title="CV Maker"
+         app:titleTextColor="@android:color/white"
+         android:id="@+id/toolbar" />
+
+    <androidx.core.widget.NestedScrollView
+         android:layout_height="match_parent"
+         android:layout_width="match_parent"
+         android:orientation="vertical">
+
+        <LinearLayout
+             android:layout_height="match_parent"
+             android:layout_width="match_parent"
+             android:padding="5dp"
+             android:orientation="vertical">
+
+            <LinearLayout
+                 android:layout_height="wrap_content"
+                 android:layout_width="match_parent"
+                 android:padding="5dp"
+                 android:orientation="horizontal">
+
+                <com.google.android.material.card.MaterialCardView
+                     android:layout_height="10dp"
+                     android:layout_width="10dp"
+                     android:layout_marginRight="5dp"
+                     app:cardBackgroundColor="?@attr/colorPrimary"
+                     app:cardCornerRadius="100dp"
+                     android:layout_gravity="center" />
+
+                <TextView
+                     android:layout_height="wrap_content"
+                     android:layout_width="match_parent"
+                     android:textSize="16sp"
+                     android:singleLine="true"
+                     android:layout_gravity="center"
+                     android:text="DATA DIRI"
+                     android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                 android:layout_height="wrap_content"
+                 android:layout_width="match_parent"
+                 android:orientation="vertical">
+
+                <com.google.android.material.card.MaterialCardView
+                     android:layout_height="wrap_content"
+                     android:layout_width="wrap_content"
+                     android:clickable="true"
+                     app:cardElevation="0dp"
+                     android:focusable="true"
+                     android:layout_gravity="center"
+                     android:background="?android:attr/selectableItemBackground"
+                     android:layout_margin="5dp"
+                     style="?attr/materialCardViewFilledStyle"
+                     app:cardCornerRadius="16dp"
+                     app:contentPadding="0dp"
+                     android:layout_weight="0"
+                     android:id="@+id/cardViewOptions">
+
+                    <ImageView
+                         android:layout_height="130dp"
+                         android:layout_width="100dp"
+                         android:src="@drawable/photo"
+                         android:scaleType="fitXY"
+                         android:id="@+id/IMGProfile" />
+
+                </com.google.android.material.card.MaterialCardView>
+
+                <TextView
+                     android:layout_height="wrap_content"
+                     android:layout_width="wrap_content"
+                     android:singleLine="true"
+                     android:layout_gravity="center"
+                     android:text="Photo"
+                     android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                 android:layout_height="wrap_content"
+                 android:layout_width="match_parent"
+                 android:orientation="vertical">
+
+                <LinearLayout
+                     android:layout_height="wrap_content"
+                     android:layout_width="match_parent"
+                     android:orientation="horizontal">
+
+                    <com.google.android.material.textfield.TextInputLayout
+                         android:layout_height="wrap_content"
+                         android:layout_width="match_parent"
+                         app:endIconMode="clear_text"
+                         app:boxCornerRadiusTopEnd="8dp"
+                         android:hint="Nama"
+                         android:padding="5dp"
+                         app:boxCornerRadiusBottomStart="8dp"
+                         app:boxStrokeWidthFocused="1.5dp"
+                         app:boxCornerRadiusBottomEnd="8dp"
+                         app:boxCornerRadiusTopStart="8dp"
+                         android:layout_weight="1">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                             android:layout_height="wrap_content"
+                             android:layout_width="match_parent"
+                             android:singleLine="true"
+                             android:inputType="text"
+                             android:text="Doraimin"
+                             android:id="@+id/ETName" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                         android:layout_height="wrap_content"
+                         android:layout_width="match_parent"
+                         app:endIconMode="clear_text"
+                         app:boxCornerRadiusTopEnd="8dp"
+                         android:hint="Kota Asal"
+                         android:padding="5dp"
+                         app:boxCornerRadiusBottomStart="8dp"
+                         app:boxStrokeWidthFocused="1.5dp"
+                         app:boxCornerRadiusBottomEnd="8dp"
+                         app:boxCornerRadiusTopStart="8dp"
+                         android:layout_weight="1">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                             android:layout_height="wrap_content"
+                             android:layout_width="match_parent"
+                             android:singleLine="true"
+                             android:inputType="text"
+                             android:text="Jakarta"
+                             android:id="@+id/ETCity" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                     android:layout_height="wrap_content"
+                     android:layout_width="match_parent"
+                     android:orientation="horizontal">
+
+                    <com.google.android.material.textfield.TextInputLayout
+                         android:layout_height="wrap_content"
+                         android:layout_width="match_parent"
+                         app:endIconMode="clear_text"
+                         app:boxCornerRadiusTopEnd="8dp"
+                         android:hint="Tgl Lahir"
+                         android:padding="5dp"
+                         app:boxCornerRadiusBottomStart="8dp"
+                         app:boxStrokeWidthFocused="1.5dp"
+                         app:boxCornerRadiusBottomEnd="8dp"
+                         app:boxCornerRadiusTopStart="8dp"
+                         android:layout_weight="1">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                             android:layout_height="wrap_content"
+                             android:layout_width="match_parent"
+                             android:clickable="true"
+                             android:singleLine="true"
+                             android:inputType="text"
+                             android:focusable="false"
+                             android:text="01 Agustus 1970"
+                             android:id="@+id/ETBorn" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                         android:layout_height="wrap_content"
+                         android:layout_width="match_parent"
+                         app:boxCornerRadiusTopEnd="8dp"
+                         android:hint="Jenis Kelamin"
+                         android:padding="5dp"
+                         app:boxCornerRadiusBottomStart="8dp"
+                         app:boxStrokeWidthFocused="1.5dp"
+                         app:boxCornerRadiusBottomEnd="8dp"
+                         style="@style/Widget.Material3.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+                         app:boxCornerRadiusTopStart="8dp"
+                         android:layout_weight="1">
+
+                        <AutoCompleteTextView
+                             android:layout_height="wrap_content"
+                             android:layout_width="match_parent"
+                             android:inputType="none"
+                             app:simpleItems="@array/gender"
+                             android:id="@+id/ETGender" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                     android:layout_height="wrap_content"
+                     android:layout_width="match_parent"
+                     android:orientation="horizontal">
+
+                    <com.google.android.material.textfield.TextInputLayout
+                         android:layout_height="wrap_content"
+                         android:layout_width="match_parent"
+                         app:boxCornerRadiusTopEnd="8dp"
+                         android:hint="Status"
+                         android:padding="5dp"
+                         app:boxCornerRadiusBottomStart="8dp"
+                         app:boxStrokeWidthFocused="1.5dp"
+                         app:boxCornerRadiusBottomEnd="8dp"
+                         style="@style/Widget.Material3.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+                         app:boxCornerRadiusTopStart="8dp"
+                         android:layout_weight="1">
+
+                        <AutoCompleteTextView
+                             android:layout_height="wrap_content"
+                             android:layout_width="match_parent"
+                             android:inputType="none"
+                             app:simpleItems="@array/stats"
+                             android:id="@+id/ETStats" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                         android:layout_height="wrap_content"
+                         android:layout_width="match_parent"
+                         app:endIconMode="clear_text"
+                         app:boxCornerRadiusTopEnd="8dp"
+                         android:hint="Alamat"
+                         android:padding="5dp"
+                         app:boxCornerRadiusBottomStart="8dp"
+                         app:boxStrokeWidthFocused="1.5dp"
+                         app:boxCornerRadiusBottomEnd="8dp"
+                         app:boxCornerRadiusTopStart="8dp"
+                         android:layout_weight="1">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                             android:layout_height="wrap_content"
+                             android:layout_width="match_parent"
+                             android:singleLine="true"
+                             android:inputType="text"
+                             android:text="Jl Mawar No1 Desa Sukamaju"
+                             android:id="@+id/ETAddress" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                     android:layout_height="wrap_content"
+                     android:layout_width="match_parent"
+                     android:padding="5dp"
+                     android:orientation="horizontal">
+
+                    <com.google.android.material.card.MaterialCardView
+                         android:layout_height="10dp"
+                         android:layout_width="10dp"
+                         android:layout_marginRight="5dp"
+                         app:cardBackgroundColor="?@attr/colorPrimary"
+                         app:cardCornerRadius="100dp"
+                         android:layout_gravity="center" />
+
+                    <TextView
+                         android:layout_height="wrap_content"
+                         android:layout_width="match_parent"
+                         android:textSize="16sp"
+                         android:singleLine="true"
+                         android:layout_gravity="center"
+                         android:text="KONTAK"
+                         android:textStyle="bold" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                     android:layout_height="wrap_content"
+                     android:layout_width="match_parent"
+                     android:orientation="vertical">
+
+                    <LinearLayout
+                         android:layout_height="wrap_content"
+                         android:layout_width="match_parent"
+                         android:orientation="horizontal">
+
+                        <com.google.android.material.textfield.TextInputLayout
+                             android:layout_height="wrap_content"
+                             android:layout_width="match_parent"
+                             app:endIconMode="clear_text"
+                             app:boxCornerRadiusTopEnd="8dp"
+                             android:hint="Telpon"
+                             android:padding="5dp"
+                             app:boxCornerRadiusBottomStart="8dp"
+                             app:boxStrokeWidthFocused="1.5dp"
+                             app:boxCornerRadiusBottomEnd="8dp"
+                             app:boxCornerRadiusTopStart="8dp"
+                             android:layout_weight="1">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                 android:layout_height="wrap_content"
+                                 android:layout_width="match_parent"
+                                 android:singleLine="true"
+                                 android:inputType="number"
+                                 android:text="08xxxxxxxxxx"
+                                 android:id="@+id/ETPhone" />
+
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <com.google.android.material.textfield.TextInputLayout
+                             android:layout_height="wrap_content"
+                             android:layout_width="match_parent"
+                             app:endIconMode="clear_text"
+                             app:boxCornerRadiusTopEnd="8dp"
+                             android:hint="Email"
+                             android:padding="5dp"
+                             app:boxCornerRadiusBottomStart="8dp"
+                             app:boxStrokeWidthFocused="1.5dp"
+                             app:boxCornerRadiusBottomEnd="8dp"
+                             app:boxCornerRadiusTopStart="8dp"
+                             android:layout_weight="1">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                 android:layout_height="wrap_content"
+                                 android:layout_width="match_parent"
+                                 android:singleLine="true"
+                                 android:inputType="textEmailAddress"
+                                 android:text="example@mail.com"
+                                 android:id="@+id/ETMail" />
+
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                         android:layout_height="wrap_content"
+                         android:layout_width="match_parent"
+                         android:orientation="horizontal">
+
+                        <com.google.android.material.textfield.TextInputLayout
+                             android:layout_height="wrap_content"
+                             android:layout_width="match_parent"
+                             app:endIconMode="clear_text"
+                             app:boxCornerRadiusTopEnd="8dp"
+                             android:hint="Instagram"
+                             android:padding="5dp"
+                             app:boxCornerRadiusBottomStart="8dp"
+                             app:boxStrokeWidthFocused="1.5dp"
+                             app:boxCornerRadiusBottomEnd="8dp"
+                             app:boxCornerRadiusTopStart="8dp"
+                             android:layout_weight="1">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                 android:layout_height="wrap_content"
+                                 android:layout_width="match_parent"
+                                 android:singleLine="true"
+                                 android:inputType="text"
+                                 android:text="@example.inst"
+                                 android:id="@+id/ETInstagram" />
+
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <com.google.android.material.textfield.TextInputLayout
+                             android:layout_height="wrap_content"
+                             android:layout_width="match_parent"
+                             app:boxCornerRadiusTopEnd="8dp"
+                             app:endIconMode="clear_text"
+                             android:hint="Facebook"
+                             android:padding="5dp"
+                             app:boxCornerRadiusBottomStart="8dp"
+                             app:boxStrokeWidthFocused="1.5dp"
+                             app:boxCornerRadiusBottomEnd="8dp"
+                             app:boxCornerRadiusTopStart="8dp"
+                             android:layout_weight="1">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                 android:layout_height="wrap_content"
+                                 android:layout_width="match_parent"
+                                 android:singleLine="true"
+                                 android:inputType="text"
+                                 android:text="Your Account"
+                                 android:id="@+id/ETFacebook" />
+
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                     android:layout_height="wrap_content"
+                     android:layout_width="match_parent"
+                     android:padding="5dp"
+                     android:orientation="horizontal">
+
+                    <com.google.android.material.card.MaterialCardView
+                         android:layout_height="10dp"
+                         android:layout_width="10dp"
+                         android:layout_marginRight="5dp"
+                         app:cardBackgroundColor="?@attr/colorPrimary"
+                         app:cardCornerRadius="100dp"
+                         android:layout_gravity="center" />
+
+                    <TextView
+                         android:layout_height="wrap_content"
+                         android:layout_width="match_parent"
+                         android:textSize="16sp"
+                         android:singleLine="true"
+                         android:layout_gravity="center"
+                         android:text="RIWAYAT PENDIDIKAN"
+                         android:textStyle="bold" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                     android:layout_height="wrap_content"
+                     android:layout_width="match_parent"
+                     android:orientation="vertical">
+
+                    <LinearLayout
+                         android:layout_height="wrap_content"
+                         android:layout_width="match_parent"
+                         android:orientation="horizontal">
+
+                        <com.google.android.material.textfield.TextInputLayout
+                             android:layout_height="wrap_content"
+                             android:layout_width="match_parent"
+                             app:endIconMode="clear_text"
+                             app:boxCornerRadiusTopEnd="8dp"
+                             android:hint="Sekolah Dasar"
+                             android:padding="5dp"
+                             app:boxCornerRadiusBottomStart="8dp"
+                             app:boxStrokeWidthFocused="1.5dp"
+                             app:boxCornerRadiusBottomEnd="8dp"
+                             app:boxCornerRadiusTopStart="8dp"
+                             android:layout_weight="1">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                 android:layout_height="wrap_content"
+                                 android:layout_width="match_parent"
+                                 android:singleLine="true"
+                                 android:inputType="text"
+                                 android:text="SD 1 Tadika Mesra"
+                                 android:id="@+id/ETSD" />
+
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <com.google.android.material.textfield.TextInputLayout
+                             android:layout_height="wrap_content"
+                             android:layout_width="match_parent"
+                             app:boxCornerRadiusTopEnd="8dp"
+                             android:hint="Dari"
+                             android:padding="5dp"
+                             app:boxCornerRadiusBottomStart="8dp"
+                             app:boxStrokeWidthFocused="1.5dp"
+                             app:boxCornerRadiusBottomEnd="8dp"
+                             app:boxCornerRadiusTopStart="8dp"
+                             android:layout_weight="2">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                 android:layout_height="wrap_content"
+                                 android:layout_width="match_parent"
+                                 android:singleLine="true"
+                                 android:inputType="number"
+                                 android:text="2005"
+                                 android:id="@+id/ETSDStart" />
+
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <com.google.android.material.textfield.TextInputLayout
+                             android:layout_height="wrap_content"
+                             android:layout_width="match_parent"
+                             app:boxCornerRadiusTopEnd="8dp"
+                             android:hint="Sampai"
+                             android:padding="5dp"
+                             app:boxCornerRadiusBottomStart="8dp"
+                             app:boxStrokeWidthFocused="1.5dp"
+                             app:boxCornerRadiusBottomEnd="8dp"
+                             app:boxCornerRadiusTopStart="8dp"
+                             android:layout_weight="2">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                 android:layout_height="wrap_content"
+                                 android:layout_width="match_parent"
+                                 android:singleLine="true"
+                                 android:inputType="number"
+                                 android:text="2011"
+                                 android:id="@+id/ETSDEnd" />
+
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                         android:layout_height="wrap_content"
+                         android:layout_width="match_parent"
+                         android:orientation="horizontal">
+
+                        <com.google.android.material.textfield.TextInputLayout
+                             android:layout_height="wrap_content"
+                             android:layout_width="match_parent"
+                             app:endIconMode="clear_text"
+                             app:boxCornerRadiusTopEnd="8dp"
+                             android:hint="Sekolah Menengah Pertama"
+                             android:padding="5dp"
+                             app:boxCornerRadiusBottomStart="8dp"
+                             app:boxStrokeWidthFocused="1.5dp"
+                             app:boxCornerRadiusBottomEnd="8dp"
+                             app:boxCornerRadiusTopStart="8dp"
+                             android:layout_weight="1">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                 android:layout_height="wrap_content"
+                                 android:layout_width="match_parent"
+                                 android:singleLine="true"
+                                 android:inputType="text"
+                                 android:text="SMP 1 Tadika Mesra"
+                                 android:id="@+id/ETSMP" />
+
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <com.google.android.material.textfield.TextInputLayout
+                             android:layout_height="wrap_content"
+                             android:layout_width="match_parent"
+                             app:boxCornerRadiusTopEnd="8dp"
+                             android:hint="Dari"
+                             android:padding="5dp"
+                             app:boxCornerRadiusBottomStart="8dp"
+                             app:boxStrokeWidthFocused="1.5dp"
+                             app:boxCornerRadiusBottomEnd="8dp"
+                             app:boxCornerRadiusTopStart="8dp"
+                             android:layout_weight="2">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                 android:layout_height="wrap_content"
+                                 android:layout_width="match_parent"
+                                 android:singleLine="true"
+                                 android:inputType="number"
+                                 android:text="2011"
+                                 android:id="@+id/ETSMPStart" />
+
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <com.google.android.material.textfield.TextInputLayout
+                             android:layout_height="wrap_content"
+                             android:layout_width="match_parent"
+                             app:boxCornerRadiusTopEnd="8dp"
+                             android:hint="Sampai"
+                             android:padding="5dp"
+                             app:boxCornerRadiusBottomStart="8dp"
+                             app:boxStrokeWidthFocused="1.5dp"
+                             app:boxCornerRadiusBottomEnd="8dp"
+                             app:boxCornerRadiusTopStart="8dp"
+                             android:layout_weight="2">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                 android:layout_height="wrap_content"
+                                 android:layout_width="match_parent"
+                                 android:singleLine="true"
+                                 android:inputType="number"
+                                 android:text="2013"
+                                 android:id="@+id/ETSMPEnd" />
+
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                         android:layout_height="wrap_content"
+                         android:layout_width="match_parent"
+                         android:orientation="horizontal">
+
+                        <com.google.android.material.textfield.TextInputLayout
+                             android:layout_height="wrap_content"
+                             android:layout_width="match_parent"
+                             app:endIconMode="clear_text"
+                             app:boxCornerRadiusTopEnd="8dp"
+                             android:hint="Sekolah Menengah Atas"
+                             android:padding="5dp"
+                             app:boxCornerRadiusBottomStart="8dp"
+                             app:boxStrokeWidthFocused="1.5dp"
+                             app:boxCornerRadiusBottomEnd="8dp"
+                             app:boxCornerRadiusTopStart="8dp"
+                             android:layout_weight="1">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                 android:layout_height="wrap_content"
+                                 android:layout_width="match_parent"
+                                 android:singleLine="true"
+                                 android:inputType="text"
+                                 android:text="SMA 1 Tadika Mesra"
+                                 android:id="@+id/ETSMA" />
+
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <com.google.android.material.textfield.TextInputLayout
+                             android:layout_height="wrap_content"
+                             android:layout_width="match_parent"
+                             app:boxCornerRadiusTopEnd="8dp"
+                             android:hint="Dari"
+                             android:padding="5dp"
+                             app:boxCornerRadiusBottomStart="8dp"
+                             app:boxStrokeWidthFocused="1.5dp"
+                             app:boxCornerRadiusBottomEnd="8dp"
+                             app:boxCornerRadiusTopStart="8dp"
+                             android:layout_weight="2">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                 android:layout_height="wrap_content"
+                                 android:layout_width="match_parent"
+                                 android:singleLine="true"
+                                 android:inputType="number"
+                                 android:text="2013"
+                                 android:id="@+id/ETSMAStart" />
+
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <com.google.android.material.textfield.TextInputLayout
+                             android:layout_height="wrap_content"
+                             android:layout_width="match_parent"
+                             app:boxCornerRadiusTopEnd="8dp"
+                             android:hint="Sampai"
+                             android:padding="5dp"
+                             app:boxCornerRadiusBottomStart="8dp"
+                             app:boxStrokeWidthFocused="1.5dp"
+                             app:boxCornerRadiusBottomEnd="8dp"
+                             app:boxCornerRadiusTopStart="8dp"
+                             android:layout_weight="2">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                 android:layout_height="wrap_content"
+                                 android:layout_width="match_parent"
+                                 android:singleLine="true"
+                                 android:inputType="number"
+                                 android:text="2016"
+                                 android:id="@+id/ETSMAEnd" />
+
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                         android:layout_height="wrap_content"
+                         android:layout_width="match_parent"
+                         android:orientation="horizontal">
+
+                        <com.google.android.material.textfield.TextInputLayout
+                             android:layout_height="wrap_content"
+                             android:layout_width="match_parent"
+                             app:endIconMode="clear_text"
+                             app:boxCornerRadiusTopEnd="8dp"
+                             android:hint="Perguruan Tinggi"
+                             android:padding="5dp"
+                             app:boxCornerRadiusBottomStart="8dp"
+                             app:boxStrokeWidthFocused="1.5dp"
+                             app:boxCornerRadiusBottomEnd="8dp"
+                             app:boxCornerRadiusTopStart="8dp"
+                             android:layout_weight="1">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                 android:layout_height="wrap_content"
+                                 android:layout_width="match_parent"
+                                 android:singleLine="true"
+                                 android:inputType="text"
+                                 android:text="Universitas Tadika Mesra"
+                                 android:id="@+id/ETUniv" />
+
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <com.google.android.material.textfield.TextInputLayout
+                             android:layout_height="wrap_content"
+                             android:layout_width="match_parent"
+                             app:boxCornerRadiusTopEnd="8dp"
+                             android:hint="Dari"
+                             android:padding="5dp"
+                             app:boxCornerRadiusBottomStart="8dp"
+                             app:boxStrokeWidthFocused="1.5dp"
+                             app:boxCornerRadiusBottomEnd="8dp"
+                             app:boxCornerRadiusTopStart="8dp"
+                             android:layout_weight="2">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                 android:layout_height="wrap_content"
+                                 android:layout_width="match_parent"
+                                 android:singleLine="true"
+                                 android:inputType="number"
+                                 android:text="2016"
+                                 android:id="@+id/ETUnivStart" />
+
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <com.google.android.material.textfield.TextInputLayout
+                             android:layout_height="wrap_content"
+                             android:layout_width="match_parent"
+                             app:boxCornerRadiusTopEnd="8dp"
+                             android:hint="Sampai"
+                             android:padding="5dp"
+                             app:boxCornerRadiusBottomStart="8dp"
+                             app:boxStrokeWidthFocused="1.5dp"
+                             app:boxCornerRadiusBottomEnd="8dp"
+                             app:boxCornerRadiusTopStart="8dp"
+                             android:layout_weight="2">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                 android:layout_height="wrap_content"
+                                 android:layout_width="match_parent"
+                                 android:singleLine="true"
+                                 android:inputType="number"
+                                 android:text="2019"
+                                 android:id="@+id/ETUnivEnd" />
+
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                    </LinearLayout>
+                
+                </LinearLayout>
+
+                    <LinearLayout
+                         android:layout_height="wrap_content"
+                         android:layout_width="match_parent"
+                         android:padding="5dp"
+                         android:orientation="horizontal">
+
+                        <com.google.android.material.card.MaterialCardView
+                             android:layout_height="10dp"
+                             android:layout_width="10dp"
+                             android:layout_marginRight="5dp"
+                             app:cardBackgroundColor="?@attr/colorPrimary"
+                             app:cardCornerRadius="100dp"
+                             android:layout_gravity="center" />
+
+                        <TextView
+                             android:layout_height="wrap_content"
+                             android:layout_width="match_parent"
+                             android:textSize="16sp"
+                             android:singleLine="true"
+                             android:layout_gravity="center"
+                             android:text="KEMAMPUAN"
+                             android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                         android:layout_height="wrap_content"
+                         android:layout_width="match_parent"
+                         android:orientation="vertical">
+
+                        <com.google.android.material.textfield.TextInputLayout
+                             android:layout_height="wrap_content"
+                             android:layout_width="match_parent"
+                             app:endIconMode="clear_text"
+                             app:boxCornerRadiusTopEnd="8dp"
+                             android:hint="KEMAMPUAN 1"
+                             android:padding="5dp"
+                             app:boxCornerRadiusBottomStart="8dp"
+                             app:boxStrokeWidthFocused="1.5dp"
+                             app:boxCornerRadiusBottomEnd="8dp"
+                             app:boxCornerRadiusTopStart="8dp">
+                             
+                            <com.google.android.material.textfield.TextInputEditText
+                                 android:layout_height="wrap_content"
+                                 android:layout_width="match_parent"
+                                 android:singleLine="true"
+                                 android:inputType="text"
+                                 android:text="Suspendisse mollis mauris at ligula pulvinar ultrices. Curabitur lacinia erat ut lacinia ullamcorper."
+                                 android:id="@+id/ETSkill1" />
+
+                        </com.google.android.material.textfield.TextInputLayout>
+                    
+                    <com.google.android.material.textfield.TextInputLayout
+                             android:layout_height="wrap_content"
+                             android:layout_width="match_parent"
+                             app:endIconMode="clear_text"
+                             app:boxCornerRadiusTopEnd="8dp"
+                             android:hint="KEMAMPUAN 2"
+                             android:padding="5dp"
+                             app:boxCornerRadiusBottomStart="8dp"
+                             app:boxStrokeWidthFocused="1.5dp"
+                             app:boxCornerRadiusBottomEnd="8dp"
+                             app:boxCornerRadiusTopStart="8dp">
+                             
+                            <com.google.android.material.textfield.TextInputEditText
+                                 android:layout_height="wrap_content"
+                                 android:layout_width="match_parent"
+                                 android:singleLine="true"
+                                 android:inputType="text"
+                                 android:text="Cras ultricies quam eu diam volutpat, quis ultricies mi sodales. Etiam turpis neque, tincidunt nec malesuada et, gravida a nunc."
+                                 android:id="@+id/ETSkill2" />
+
+                        </com.google.android.material.textfield.TextInputLayout>
+                    
+                   <com.google.android.material.textfield.TextInputLayout
+                             android:layout_height="wrap_content"
+                             android:layout_width="match_parent"
+                             app:endIconMode="clear_text"
+                             app:boxCornerRadiusTopEnd="8dp"
+                             android:hint="KEMAMPUAN 3"
+                             android:padding="5dp"
+                             app:boxCornerRadiusBottomStart="8dp"
+                             app:boxStrokeWidthFocused="1.5dp"
+                             app:boxCornerRadiusBottomEnd="8dp"
+                             app:boxCornerRadiusTopStart="8dp">
+                             
+                            <com.google.android.material.textfield.TextInputEditText
+                                 android:layout_height="wrap_content"
+                                 android:layout_width="match_parent"
+                                 android:singleLine="true"
+                                 android:inputType="text"
+                                 android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas varius in neque vel eleifend. Quisque auctor consequat purus, ac suscipit tortor malesuada ac."
+                                 android:id="@+id/ETSkill3" />
+
+                        </com.google.android.material.textfield.TextInputLayout>
+
+
+                    </LinearLayout>
+                
+                
+               <LinearLayout
+                     android:layout_height="wrap_content"
+                     android:layout_width="match_parent"
+                     android:padding="5dp"
+                     android:orientation="horizontal">
+
+                    <com.google.android.material.card.MaterialCardView
+                         android:layout_height="10dp"
+                         android:layout_width="10dp"
+                         android:layout_marginRight="5dp"
+                         app:cardBackgroundColor="?@attr/colorPrimary"
+                         app:cardCornerRadius="100dp"
+                         android:layout_gravity="center" />
+
+                    <TextView
+                         android:layout_height="wrap_content"
+                         android:layout_width="match_parent"
+                         android:textSize="16sp"
+                         android:singleLine="true"
+                         android:layout_gravity="center"
+                         android:text="PENGALAMAN KERJA"
+                         android:textStyle="bold" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                     android:layout_height="wrap_content"
+                     android:layout_width="match_parent"
+                     android:orientation="vertical">
+
+                    <LinearLayout
+                         android:layout_height="wrap_content"
+                         android:layout_width="match_parent"
+                         android:orientation="horizontal">
+
+                        <com.google.android.material.textfield.TextInputLayout
+                             android:layout_height="wrap_content"
+                             android:layout_width="match_parent"
+                             app:endIconMode="clear_text"
+                             app:boxCornerRadiusTopEnd="8dp"
+                             android:hint="Pernah Bekerja 1"
+                             android:padding="5dp"
+                             app:boxCornerRadiusBottomStart="8dp"
+                             app:boxStrokeWidthFocused="1.5dp"
+                             app:boxCornerRadiusBottomEnd="8dp"
+                             app:boxCornerRadiusTopStart="8dp"
+                             android:layout_weight="1">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                 android:layout_height="wrap_content"
+                                 android:layout_width="match_parent"
+                                 android:singleLine="true"
+                                 android:inputType="text"
+                                 android:text="PT Bengkel Cinta Sejati"
+                                 android:id="@+id/ETWork1" />
+
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <com.google.android.material.textfield.TextInputLayout
+                             android:layout_height="wrap_content"
+                             android:layout_width="match_parent"
+                             app:boxCornerRadiusTopEnd="8dp"
+                             android:hint="Dari"
+                             android:padding="5dp"
+                             app:boxCornerRadiusBottomStart="8dp"
+                             app:boxStrokeWidthFocused="1.5dp"
+                             app:boxCornerRadiusBottomEnd="8dp"
+                             app:boxCornerRadiusTopStart="8dp"
+                             android:layout_weight="2">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                 android:layout_height="wrap_content"
+                                 android:layout_width="match_parent"
+                                 android:singleLine="true"
+                                 android:inputType="number"
+                                 android:text="2005"
+                                 android:id="@+id/ETWork1Start" />
+
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <com.google.android.material.textfield.TextInputLayout
+                             android:layout_height="wrap_content"
+                             android:layout_width="match_parent"
+                             app:boxCornerRadiusTopEnd="8dp"
+                             android:hint="Sampai"
+                             android:padding="5dp"
+                             app:boxCornerRadiusBottomStart="8dp"
+                             app:boxStrokeWidthFocused="1.5dp"
+                             app:boxCornerRadiusBottomEnd="8dp"
+                             app:boxCornerRadiusTopStart="8dp"
+                             android:layout_weight="2">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                 android:layout_height="wrap_content"
+                                 android:layout_width="match_parent"
+                                 android:singleLine="true"
+                                 android:inputType="number"
+                                 android:text="2011"
+                                 android:id="@+id/ETWork1End" />
+
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                    </LinearLayout>
+                    
+                    <com.google.android.material.textfield.TextInputLayout
+                             android:layout_height="wrap_content"
+                             android:layout_width="match_parent"
+                             app:endIconMode="clear_text"
+                             app:boxCornerRadiusTopEnd="8dp"
+                             android:hint="Posisi"
+                             android:padding="5dp"
+                             app:boxCornerRadiusBottomStart="8dp"
+                             app:boxStrokeWidthFocused="1.5dp"
+                             app:boxCornerRadiusBottomEnd="8dp"
+                             app:boxCornerRadiusTopStart="8dp">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                 android:layout_height="wrap_content"
+                                 android:layout_width="match_parent"
+                                 android:singleLine="true"
+                                 android:inputType="text"
+                                 android:text="Direktur Utama"
+                                 android:id="@+id/ETPosisi1" />
+
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                    <LinearLayout
+                         android:layout_height="wrap_content"
+                         android:layout_width="match_parent"
+                         android:orientation="horizontal">
+
+                        <com.google.android.material.textfield.TextInputLayout
+                             android:layout_height="wrap_content"
+                             android:layout_width="match_parent"
+                             app:endIconMode="clear_text"
+                             app:boxCornerRadiusTopEnd="8dp"
+                             android:hint="Pernah Bekerja 2"
+                             android:padding="5dp"
+                             app:boxCornerRadiusBottomStart="8dp"
+                             app:boxStrokeWidthFocused="1.5dp"
+                             app:boxCornerRadiusBottomEnd="8dp"
+                             app:boxCornerRadiusTopStart="8dp"
+                             android:layout_weight="1">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                 android:layout_height="wrap_content"
+                                 android:layout_width="match_parent"
+                                 android:singleLine="true"
+                                 android:inputType="text"
+                                 android:text="PT Mencari Cinta Sejati"
+                                 android:id="@+id/ETWork2" />
+
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <com.google.android.material.textfield.TextInputLayout
+                             android:layout_height="wrap_content"
+                             android:layout_width="match_parent"
+                             app:boxCornerRadiusTopEnd="8dp"
+                             android:hint="Dari"
+                             android:padding="5dp"
+                             app:boxCornerRadiusBottomStart="8dp"
+                             app:boxStrokeWidthFocused="1.5dp"
+                             app:boxCornerRadiusBottomEnd="8dp"
+                             app:boxCornerRadiusTopStart="8dp"
+                             android:layout_weight="2">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                 android:layout_height="wrap_content"
+                                 android:layout_width="match_parent"
+                                 android:singleLine="true"
+                                 android:inputType="number"
+                                 android:text="2011"
+                                 android:id="@+id/ETWork2Start" />
+
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <com.google.android.material.textfield.TextInputLayout
+                             android:layout_height="wrap_content"
+                             android:layout_width="match_parent"
+                             app:boxCornerRadiusTopEnd="8dp"
+                             android:hint="Sampai"
+                             android:padding="5dp"
+                             app:boxCornerRadiusBottomStart="8dp"
+                             app:boxStrokeWidthFocused="1.5dp"
+                             app:boxCornerRadiusBottomEnd="8dp"
+                             app:boxCornerRadiusTopStart="8dp"
+                             android:layout_weight="2">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                 android:layout_height="wrap_content"
+                                 android:layout_width="match_parent"
+                                 android:singleLine="true"
+                                 android:inputType="number"
+                                 android:text="2013"
+                                 android:id="@+id/ETWork2End" />
+
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                    </LinearLayout>
+                    
+                    <com.google.android.material.textfield.TextInputLayout
+                             android:layout_height="wrap_content"
+                             android:layout_width="match_parent"
+                             app:endIconMode="clear_text"
+                             app:boxCornerRadiusTopEnd="8dp"
+                             android:hint="Posisi"
+                             android:padding="5dp"
+                             app:boxCornerRadiusBottomStart="8dp"
+                             app:boxStrokeWidthFocused="1.5dp"
+                             app:boxCornerRadiusBottomEnd="8dp"
+                             app:boxCornerRadiusTopStart="8dp">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                 android:layout_height="wrap_content"
+                                 android:layout_width="match_parent"
+                                 android:singleLine="true"
+                                 android:inputType="text"
+                                 android:text="Manager Umum"
+                                 android:id="@+id/ETPosisi2" />
+
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                </LinearLayout>
+
+                <Button
+                     android:layout_height="wrap_content"
+                     android:layout_width="match_parent"
+                     android:layout_margin="5dp"
+                     android:textColor="@android:color/white"
+                     style="@style/Widget.Material3.Button"
+                     android:id="@+id/BTNGenerate"
+                     android:text="Generate"
+                     android:textStyle="bold" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</LinearLayout>

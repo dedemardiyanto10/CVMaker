@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">CVMaker</string>
+
+    <array name="gender">
+        <item>Laki-laki</item>
+        <item>Perempuan</item>
+    </array>
+    
+    <array name="stats">
+        <item>Menikah</item>
+        <item>Belum Menikah</item>
+    </array>
+
+</resources>

@@ -1,0 +1,80 @@
+{
+  "allFiles": [
+    {
+      "file": "/storage/emulated/0/AndroidIDEProjects/CVMaker/app/src/main/java/com/cvmaker/app/ResultActivity.java",
+      "selection": {
+        "end": {
+          "column": 0,
+          "index": 0,
+          "line": 0
+        },
+        "start": {
+          "column": 0,
+          "index": 0,
+          "line": 0
+        }
+      }
+    },
+    {
+      "file": "/storage/emulated/0/AndroidIDEProjects/CVMaker/app/src/main/java/com/cvmaker/app/MainActivity.java",
+      "selection": {
+        "end": {
+          "column": 0,
+          "index": 0,
+          "line": 0
+        },
+        "start": {
+          "column": 0,
+          "index": 0,
+          "line": 0
+        }
+      }
+    },
+    {
+      "file": "/storage/emulated/0/AndroidIDEProjects/CVMaker/app/src/main/res/layout/activity_main.xml",
+      "selection": {
+        "end": {
+          "column": 175,
+          "index": 40467,
+          "line": 791
+        },
+        "start": {
+          "column": 175,
+          "index": 40467,
+          "line": 791
+        }
+      }
+    },
+    {
+      "file": "/storage/emulated/0/AndroidIDEProjects/CVMaker/app/src/main/res/layout/activity_result.xml",
+      "selection": {
+        "end": {
+          "column": 71,
+          "index": 30743,
+          "line": 554
+        },
+        "start": {
+          "column": 65,
+          "index": 30737,
+          "line": 554
+        }
+      }
+    },
+    {
+      "file": "/storage/emulated/0/AndroidIDEProjects/CVMaker/app/src/main/res/layout/activity_edit_name.xml",
+      "selection": {
+        "end": {
+          "column": 15,
+          "index": 1218,
+          "line": 31
+        },
+        "start": {
+          "column": 15,
+          "index": 1218,
+          "line": 31
+        }
+      }
+    }
+  ],
+  "selectedFile": "/storage/emulated/0/AndroidIDEProjects/CVMaker/app/src/main/res/layout/activity_main.xml"
+}
